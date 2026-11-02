@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nija Maharjan | QA Engineer</title>
+  <meta name="description" content="Nija Maharjan, Associate QA Engineer in Kathmandu. Manual and automation testing of web and mobile apps with Selenium (Python), Appium and JIRA.">
+
+  <meta property="og:title" content="Nija Maharjan | QA Engineer">
+  <meta property="og:description" content="Associate QA Engineer. I test web and mobile apps so bugs meet me before they meet your users.">
+  <meta property="og:url" content="https://nijamaharjan.com.np">
+  <meta property="og:image" content="https://nijamaharjan.com.np/images/photo.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐞</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+  <nav class="nav" aria-label="Main">
+    <div class="container nav__inner">
+      <a class="logo" href="#top">nija<span>.</span>qa</a>
+
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li class="mobile-only"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+        <a class="btn btn--small nav__contact" href="#contact">Contact me</a>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <header class="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__intro">
+          <div class="hero__photo">
+            <div class="hero__avatar">
+              
+              NM
+              <img src="images/photo.jpg" alt="Nija Maharjan">
+            </div>
+            <svg class="hero__circle" viewBox="0 0 160 160" aria-hidden="true">
+              <path d="M80 8c42 0 72 30 70 70-2 44-36 74-76 72C34 148 8 118 10 78 12 40 44 10 86 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+            <span class="hero__note" aria-hidden="true">verified ✓</span>
+          </div>
+
+          <p class="status"><span class="status__dot"></span> Open to QA opportunities</p>
+          <h1 class="hero__title">Nija Maharjan</h1>
+          <p class="hero__lede">
+            Associate QA Engineer in Kathmandu. I test web and mobile apps
+            <strong>so bugs meet me before they meet your users.</strong>
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn btn--outline" href="#projects">See my work</a>
+          </div>
+
+          <p class="hero__hint">🐞 <strong>Psst…</strong> 5 bugs are hiding on this page. Can you find them?</p>
+        </div>
+
+        <div class="terminal" role="region" aria-label="Interactive terminal. Type a command or tap one of the command buttons.">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">nija@qa: ~/portfolio</span>
+          </div>
+
+          <div class="terminal__screen" id="terminal-screen">
+            <div id="terminal-output" aria-live="polite"></div>
+            <form class="terminal__prompt" id="terminal-form" autocomplete="off">
+              <label class="t-dim" for="terminal-input">$</label>
+              <input class="terminal__input" id="terminal-input" type="text" spellcheck="false" autocapitalize="off" placeholder="type help and press Enter">
+            </form>
+          </div>
+
+          <div class="terminal__commands">
+            <button type="button" data-command="whoami">whoami</button>
+            <button type="button" data-command="run skills">run skills</button>
+            <button type="button" data-command="show projects">show projects</button>
+            <button type="button" data-command="find bugs">find bugs</button>
+            <button type="button" data-command="hire nija" class="is-highlight">hire nija</button>
+          </div>
+        </div>
+
+      </div>
+      <button class="bug bug--hero" type="button" aria-label="Hidden bug"></button>
+    </header>
+
+    <section class="section section--about" id="about">
+      <div class="container">
+        <h2 class="section__title">About me</h2>
+        <p class="section__note">the human behind the test cases</p>
+
+        <div class="about">
+          <div class="about__text">
+            <p>I’m an Associate QA Engineer with hands-on experience testing web and mobile applications. I design and run test cases across functional, regression, integration and UI testing, and I follow defects through their full lifecycle in JIRA until they’re truly fixed.</p>
+            <p>On the automation side, I write Selenium scripts in Python using the Page Object Model and test mobile apps with Appium. I also wear a second hat as Scrum Master, keeping our sprints, stand-ups and retros running smoothly.</p>
+            <p>I care about the small details users notice, and I’m always learning new QA tools and practices.</p>
+          </div>
+
+          <ul class="card facts shadow--mint">
+            <li><span>Experience</span><strong>1+ years in QA</strong></li>
+            <li><span>Current role</span><strong>Associate QA &amp; Scrum Master</strong></li>
+            <li><span>Company</span><strong>PiTech Limited</strong></li>
+            <li><span>Based in</span><strong>Kathmandu, Nepal</strong></li>
+            <li><span>Degree</span><strong>BSc Computer Science, Data Science</strong></li>
+          </ul>
+        </div>
+      </div>
+      <button class="bug bug--about" type="button" aria-label="Hidden bug"></button>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section--skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__note">all assertions passing</p>
+
+        <div class="skills">
+          <div class="skill-group skill-group--wide skill-group--coral shadow--butter">
+            <h3>Testing</h3>
+            <span class="skill-group__count">✓ 10 passed</span>
+            <ul class="chips">
+              <li>Manual testing</li>
+              <li>Test case design &amp; execution</li>
+              <li>Functional</li>
+              <li>Regression</li>
+              <li>Integration</li>
+              <li>UI testing</li>
+              <li>Exploratory</li>
+              <li>UAT</li>
+              <li>Bug tracking</li>
+              <li>SDLC / STLC</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--mint">
+            <h3>Automation</h3>
+            <span class="skill-group__count">✓ 3 passed</span>
+            <ul class="chips">
+              <li>Selenium (Python)</li>
+              <li>Appium</li>
+              <li>Page Object Model</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--butter">
+            <h3>Code &amp; data</h3>
+            <span class="skill-group__count">✓ 4 passed</span>
+            <ul class="chips">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>OOP basics</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--coral">
+            <h3>Tools</h3>
+            <span class="skill-group__count">✓ 6 passed</span>
+            <ul class="chips">
+              <li>JIRA</li>
+              <li>DBeaver</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Tableau</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--aqua">
+            <h3>Agile</h3>
+            <span class="skill-group__count">✓ 5 passed</span>
+            <ul class="chips">
+              <li>Scrum</li>
+              <li>Sprint planning</li>
+              <li>Daily stand-ups</li>
+              <li>Sprint reviews</li>
+              <li>Retrospectives</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group--wide skill-group--aqua shadow--mint">
+            <h3>How I work</h3>
+            <span class="skill-group__count">✓ 6 passed</span>
+            <ul class="chips">
+              <li>Attention to detail</li>
+              <li>Analytical thinking</li>
+              <li>Team collaboration</li>
+              <li>Clear communication</li>
+              <li>Problem solving</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="bug bug--skills" type="button" aria-label="Hidden bug"></button>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <p class="section__note">release notes so far</p>
+
+        <ol class="timeline" reversed>
+          <li class="timeline__item timeline__item--current">
+            <span class="badge badge--version">v2.0 current</span>
+            <h3 class="timeline__role">Associate QA &amp; Scrum Master</h3>
+            <p class="timeline__meta">PiTech Limited, Kathmandu | Nov 2025 – Present</p>
+            <ul>
+              <li>Manual and automated testing of web and mobile apps using Selenium (Python) and Appium.</li>
+              <li>Functional, regression, UI and User Acceptance Testing based on requirements and real user scenarios.</li>
+              <li>Design and execute test cases and scenarios to validate functionality and business requirements.</li>
+              <li>Identify, document and track defects in JIRA, and work with developers to troubleshoot them.</li>
+              <li>Help facilitate Sprint Planning, Daily Stand-ups, Sprint Reviews and Retrospectives.</li>
+            </ul>
+          </li>
+
+          <li class="timeline__item">
+            <span class="badge badge--version">v1.0</span>
+            <h3 class="timeline__role">QA Automation, Manual Testing &amp; Data Analyst Intern</h3>
+            <p class="timeline__meta">PiTech Limited, Kathmandu | Jul 2025 – Oct 2025</p>
+            <ul>
+              <li>Built Selenium WebDriver automation scripts and ran functional, UI, integration and regression tests.</li>
+              <li>Designed and executed test cases, documented defects and collaborated with developers on fixes.</li>
+              <li>Cleaned, validated and explored data using Python.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--projects" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__note">tickets I’ve closed</p>
+
+        <div class="projects">
+          <article class="card ticket shadow--coral">
+            <div class="ticket__top">
+              <span class="ticket__key">NIJA-101</span>
+              <span class="badge badge--done">Done</span>
+            </div>
+            <h3>Room Rental Mobile App</h3>
+            <p>Capstone project where I worked as front-end developer, UI/UX designer and QA, building a responsive, intuitive interface with smooth navigation.</p>
+            <div class="tags"><span>Mobile</span><span>UI/UX</span><span>QA</span><span>Front-end</span></div>
+          </article>
+
+          <article class="card ticket shadow--aqua">
+            <div class="ticket__top">
+              <span class="ticket__key">NIJA-102</span>
+              <span class="badge badge--done">Done</span>
+            </div>
+            <h3>Stock Market Prediction</h3>
+            <p>Training project covering data preprocessing, feature engineering and machine learning analysis with Python, Pandas and Scikit-learn.</p>
+            <div class="tags"><span>Python</span><span>ML</span><span>SQL</span><span>Pandas</span></div>
+          </article>
+
+          <article class="card ticket shadow--mint">
+            <div class="ticket__top">
+              <span class="ticket__key">NIJA-103</span>
+              <span class="badge badge--done">Done</span>
+            </div>
+            <h3>Database Design</h3>
+            <p>Designed a relational PostgreSQL database with tables, relationships, ER diagrams and SQL queries.</p>
+            <div class="tags"><span>PostgreSQL</span><span>ER diagrams</span><span>SQL</span></div>
+          </article>
+        </div>
+      </div>
+      <button class="bug bug--projects" type="button" aria-label="Hidden bug"></button>
+    </section>
+
+    <section class="section section--education" id="education">
+      <div class="container">
+        <h2 class="section__title">Education &amp; achievements</h2>
+        <p class="section__note">the extra coverage</p>
+
+        <div class="education">
+          <div class="card info-card shadow--aqua">
+            <h3>Education</h3>
+            <div class="entry">
+              <strong>Bachelor of Computer Science, Data Science major</strong>
+              <span>Taylor’s University (IIMS College) | 2022 – 2026 | GPA 3.49</span>
+            </div>
+
+            <div class="entry">
+              <strong>+2, Science</strong>
+              <span>DAV College | 2019-2021 | GPA 3.66</span>
+            </div>
+
+            <h3>Certifications</h3>
+            <div class="entry">
+              <strong>React JS Professional Course</strong>
+              <span>Agile Institute, 2024</span>
+            </div>
+            <div class="entry">
+              <strong>UX Design</strong>
+              <span>Coursera</span>
+            </div>
+          </div>
+
+          <div class="card info-card shadow--coral">
+            <h3>Achievements</h3>
+            <div class="entry">
+              <strong>Dean’s List Award, five semesters</strong>
+              <div class="pills"><span>Sem 2.5</span><span>Sem 3</span><span>Sem 4</span><span>Sem 5</span><span>Sem 6.5</span></div>
+            </div>
+            <div class="entry">
+              <strong>Recognized for problem solving and coordination</strong>
+              <span>Across multiple university events</span>
+            </div>
+
+            <h3>Activities</h3>
+            <div class="entry">
+              <strong>Organizer, IIMS × Turboline International Hackathon</strong>
+              <span>2025</span>
+            </div>
+            <div class="entry">
+              <strong>Organizer, IIMS Dashain Carnival</strong>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">Let’s work together</h2>
+        <p class="section__note">found a role that needs testing? file a ticket</p>
+
+        <div class="card contact-ticket">
+          <div class="contact-ticket__head">
+            <span>HIRE-001</span>
+            <span class="badge badge--done">Open</span>
+          </div>
+
+          <div class="contact-ticket__body">
+            <dl class="details">
+              <dt>Summary</dt>
+              <dd>Bring Nija onto your QA team</dd>
+              <dt>Assignee</dt>
+              <dd>Nija Maharjan</dd>
+              <dt>Priority</dt>
+              <dd class="priority">Highest</dd>
+              <dt>Expected result</dt>
+              <dd>Fewer bugs in production</dd>
+            </dl>
+
+            <div class="contact-links">
+              <a href="mailto:nijamaharjan13@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+                <span>Email<small>nijamaharjan13@gmail.com</small></span>
+              </a>
+              <a href="https://www.linkedin.com/in/nija-maharjan-b0641a356" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.1zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z" /></svg>
+                <span>LinkedIn<small>nija-maharjan</small></span>
+              </a>
+              <a href="https://github.com/nija616" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" /></svg>
+                <span>GitHub<small>github.com/nija616</small></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="bug bug--contact" type="button" aria-label="Hidden bug"></button>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>Designed, built and tested by Nija Maharjan, 2026</span>
+      <span>Known bugs in production: 0 (probably)</span>
+    </div>
+  </footer>
+
+  <div class="bug-counter" id="bug-counter" aria-live="polite">🐞 <span id="bug-count">Bugs found: 0/5</span></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
