@@ -1,10 +1,16 @@
 (function () {
-  "use strict";
+    "use strict";
+
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+    }
+    
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 
-  /* ---------- 1. Theme switch ---------- */
+// Theme switch
 
   const root = document.documentElement;
   const themeButton = document.getElementById("theme-toggle");
@@ -19,7 +25,6 @@
     try {
       localStorage.setItem(THEME_KEY, theme);
     } catch (error) {
-      // Storage not available (private mode etc.). Theme still works for this visit.
     }
   }
 
@@ -39,7 +44,7 @@
   });
 
 
-  /* ---------- 2. Mobile menu ---------- */
+// Mobile menu 
 
   const menu = document.getElementById("nav-menu");
   const menuButton = document.getElementById("menu-toggle");
@@ -62,8 +67,7 @@
   });
 
 
-  /* ---------- 3. Profile photo ---------- */
-  // If images/photo.jpg is missing, remove the broken image so the "NM" initials show.
+// Profile photo
 
   const photo = document.querySelector(".hero__avatar img");
 
@@ -80,7 +84,7 @@
   }
 
 
-  /* ---------- 4. Bug hunt game ---------- */
+// Bug hunt game
 
   const bugs = document.querySelectorAll(".bug");
   const bugCounter = document.getElementById("bug-counter");
@@ -147,7 +151,7 @@
   });
 
 
-  /* ---------- 5. Interactive terminal ---------- */
+// Interactive terminal
 
   const terminal = document.querySelector(".terminal");
   const screen = document.getElementById("terminal-screen");
@@ -181,12 +185,12 @@
     return line;
   }
 
-  // Prints lines one after another. Each line is [html, delayInMs].
+  // Prints lines one after another.
   function printLines(lines, id, onDone) {
     let index = 0;
 
     function next() {
-      if (id !== runId) return;              // A newer command started
+      if (id !== runId) return;              //new command starts
       if (index >= lines.length) {
         if (onDone) onDone();
         return;
@@ -432,7 +436,7 @@
     input.value = "";
   });
 
-  // Arrow up / down to reuse previous commands
+  // Arrow up/down to reuse previous commands
   input.addEventListener("keydown", function (event) {
     if (!history.length) return;
 
