@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Nija Maharjan**, Associate QA Engineer based in Kathmandu, Nepal.
 
-**Live site:** https://nija616.github.io
+**Live site:** https://nijamaharjan.com.np
 
 ![Portfolio screenshot](images/screenshot.png)
 
